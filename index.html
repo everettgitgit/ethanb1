@@ -22,7 +22,7 @@
         .code-snippet {
             background-color: #f5f5f5;
             padding: 10px;
-            border-left: 3px solid #007bff;
+            border-left: 3px solid #e5ff00;
             margin: 10px 0;
             overflow-x: auto;
         }
@@ -44,13 +44,107 @@
             </div>
         </div>
 
+
+        <!-- Text Tags and Formatting -->
+        <div class="section">
+            <h2>Text Tags and Formatting</h2>
+            <p>Basic text formatting tags to structure and style text content.</p>
+            <div class="code-snippet">
+                <code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code><br>
+                <code>&lt;h2&gt;Heading 2&lt;/h2&gt;</code><br>
+                <!-- Continue through h6 -->
+                <code>&lt;p&gt;Paragraph&lt;/p&gt;</code><br>
+                <code>&lt;strong&gt;Bold Text&lt;/strong&gt;</code><br>
+                <code>&lt;em&gt;Italic Text&lt;/em&gt;</code><br>
+                <!-- Other formatting tags -->
+            </div>
+        </div>
+
+        <!-- Lists -->
+        <div class="section">
+            <h2>Lists</h2>
+            <p>Creating ordered and unordered lists, as well as description lists.</p>
+            <div class="code-snippet">
+                <code>&lt;ul&gt;</code><br>
+                <code>  &lt;li&gt;List Item 1&lt;/li&gt;</code><br>
+                <code>  &lt;li&gt;List Item 2&lt;/li&gt;</code><br>
+                <code>&lt;/ul&gt;</code><br>
+                <code>&lt;ol&gt;</code><br>
+                <!-- Ordered list items -->
+                <code>&lt;/ol&gt;</code><br>
+                <!-- Description List -->
+                <code>&lt;dl&gt;</code><br>
+                <!-- DL items -->
+                <code>&lt;/dl&gt;</code><br>
+            </div>
+        </div>
+
+        <!-- Graphical Elements -->
+        <div class="section">
+            <h2>Graphical Elements</h2>
+            <p>Adding images and figures with captions to your HTML content.</p>
+            <div class="code-snippet">
+                <code>&lt;img src="image.jpg" alt="Image Description"&gt;</code><br>
+                <code>&lt;figure&gt;</code><br>
+                <code>  &lt;img src="image.jpg" alt="Image Description"&gt;</code><br>
+                <code>  &lt;figcaption&gt;Caption for the image.&lt;/figcaption&gt;</code><br>
+                <code>&lt;/figure&gt;</code><br>
+            </div>
+        </div>
+
+        <!-- Forms Section -->
+        <div class="section">
+            <h2>Forms</h2>
+            <p>Creating forms for user input.</p>
+            <div class="code-snippet">
+                <p>Opening tag for a form</p>
+                <code>&lt;form action="/submit"&gt;</code><br>
+                <p>Input field for user text input</p>
+                <code>&lt;input type="text" name="username"&gt;</code><br>
+                <p>Input field for password input</p>
+                <code>&lt;input type="password" name="password"&gt;</code><br>
+                <p>Submit button for the form</p>
+                <code>&lt;input type="submit" value="Submit"&gt;</code><br>
+                <code>&lt;/form&gt;</code><br>
+            </div>
+        </div>
+
+        <!-- Table Section -->
+        <div class="section">
+            <h2>Tables</h2>
+            <p>Creating tables for data representation.</p>
+            <div class="code-snippet">
+                <code>&lt;table&gt;</code><br> 
+                <code>&lt;tbody&gt;</code><br>
+                <code>&lt;tr&gt;</code><br>
+                <p>content "Row 1, Cell 1"</p>
+                <code>&lt;td&gt;Row 1, Cell 1&lt;/td&gt;</code><br>
+                <p>content "Row 1, Cell 2"</p>
+                <code>&lt;td&gt;Row 1, Cell 2&lt;/td&gt;</code><br>
+                <code>&lt;/tr&gt;</code><br>
+                <code>&lt;/tbody&gt;</code><br>
+                <code>&lt;/table&gt;</code><br>
+            </div>
+        </div>
+
         <!-- Attributes Section -->
         <div class="section">
             <h2>Attributes</h2>
             <div class="code-snippet">
-                <code>&lt;a href="url" target="_blank"&gt;link text&lt;/a&gt;</code><br>
-                <code>&lt;img src="img.jpg" alt="description" width="500" height="600"&gt;</code><br>
-                <!-- More attributes -->
+                <p>anchor tag with href attribute</p>
+                <code>&lt;a href="https://example.com"&gt;Click here&lt;/a&gt;</code><br>
+                <p>image tag with src and alt attributes</p>
+                <code>&lt;img src="image.jpg" alt="Description"&gt;</code><br>
+                <p>anchor tag with href, target, and title attributes</p>
+                <code>&lt;a href="url" target="_blank" title="Tooltip"&gt;Link&lt;/a&gt;</code><br>
+                <p>image tag with src, alt, width, and height attributes</p>
+                <code>&lt;img src="image.jpg" alt="Image Description" width="500" height="300"&gt;</code><br>
+                <p>input tag with type, disabled, and placeholder attributes</p>
+                <code>&lt;input type="text" disabled placeholder="Disabled Input"&gt;</code><br>
+                <p>a div tag with class attribute</p>
+                <code>&lt;div class="classname"&gt;...&lt;/div&gt;</code><br>
+                <p>a span tag with inline style attribute</p>
+                <code>&lt;span style="color: red;"&gt;Colored Text&lt;/span&gt;</code><br>
             </div>
         </div>
 
@@ -59,16 +153,13 @@
             <h2>Useful Snippets</h2>
             <div class="code-snippet">
                 <code>&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/videoID" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</code><br>
-                <!-- More useful snippets -->
+                <code>&lt;!-- This is a comment --&gt;</code><br>
+                <code>&lt;meta charset="UTF-8"&gt;</code><br>
+                <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code><br>
             </div>
         </div>
 
-        <!-- Additional Notes -->
-        <div class="section">
-            <h2>Additional Notes</h2>
-            <p>
-                Always validate your HTML using the W3C validator. Remember to add comments for clarity: &lt;!-- This is a comment --&gt;. Study semantic HTML for better accessibility and SEO.
-            </p>
+
         </div>
 
     </div>
